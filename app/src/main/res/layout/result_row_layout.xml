@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <TextView
+        android:id="@+id/subjecttxtview"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/ca1txtview"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="7dp"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ca2txtview"
+        android:layout_weight="1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/examtxtview"
+        android:layout_width="55dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gradetxtview"
+        android:layout_weight="1"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="center_vertical"
+        android:text="New Text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

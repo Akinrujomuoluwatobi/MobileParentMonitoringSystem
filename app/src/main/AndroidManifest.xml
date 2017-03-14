@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.royalteck.progtobi.mpms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.royalteck.progtobi.mpms.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_admin" />
+        <activity
+            android:name=".LevelCordActivity"
+            android:label="@string/title_activity_levelcord" />
+        <activity
+            android:name=".ParentActivity"
+            android:label="@string/title_activity_parent" />
+        <activity
+            android:name=".AddEventsActivity"
+            android:label="@string/title_activity_add_events"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ParentViewResult"
+            android:label="@string/title_activity_parent_view_result"
+            android:parentActivityName=".ParentActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.royalteck.progtobi.mpms.ParentActivity" />
+        </activity>
+        <activity
+            android:name=".ViewResultActivity"
+            android:label="@string/title_activity_view_result"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ParentContactLcActivity"
+            android:label="@string/title_activity_parent_contact_lc"
+            android:parentActivityName=".ParentActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.royalteck.progtobi.mpms.ParentActivity" />
+        </activity>
+        <activity
+            android:name=".LvContactParentActivity"
+            android:label="@string/title_activity_lv_contact_parent"
+            android:parentActivityName=".LevelCordActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.royalteck.progtobi.mpms.LevelCordActivity" />
+        </activity>
+    </application>
+
+</manifest>

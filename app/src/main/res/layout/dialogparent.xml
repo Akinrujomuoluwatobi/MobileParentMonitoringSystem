@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/sessionpadia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sessions"
+        android:padding="15dp"
+        android:prompt="@string/session"
+        android:spinnerMode="dropdown">
+
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <RadioGroup
+        android:id="@+id/semestergrppa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/firstsem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:hint="1st Semester"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/secondsem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:hint="2nd Semester"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+</LinearLayout>

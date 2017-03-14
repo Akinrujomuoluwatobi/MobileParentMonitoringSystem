@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.royalteck.progtobi.mpms.AdminActivity">
+
+    <include
+        android:id="@+id/app_bar1"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_bar1"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/newsheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="News Heading"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/newscaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="News Caption"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/newswid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/caption"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="News"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:padding="8dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/addevent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:padding="15dp"
+                    android:text="Add Events"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/uploadnews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:padding="15dp"
+                    android:text="Upload News"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/uploadnewspb"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
